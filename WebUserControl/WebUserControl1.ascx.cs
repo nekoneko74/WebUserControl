@@ -29,7 +29,7 @@ namespace WebUserControl
             //「ボタン1がクリックされた」ときに発生させるイベントにハンドラが設定されていればハンドラを呼び出す
             if (this.OnButton1Click is OnButton1ClickEventHandler)
             {
-                this.OnButton1Click();
+                this.OnButton1Click.Invoke();
             }
         }
 
